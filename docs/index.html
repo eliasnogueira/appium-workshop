@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Configuração de máquina para Appium</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link rel="stylesheet" href="css/ghpages-materialize.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="blue-grey darken-1">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo">&nbsp;Configuração de máquina para Appium</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col l9">
+                <p class="caption">Siga todos os passos das pré-condições para que você possa desenvolver e executar os scripts de teste utilizando Apppium (e qualquer outro framework executando o teste em Android)</h5>
+                <hr/>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div id="instalacao_java" class="collapsible-header"><i class="fa fa-arrow-right" aria-hidden="true"></i>Instalar Java JDK</div>
+                        <div class="collapsible-body">
+                            <ol>
+                                <li>Acessar o site <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></li>
+                                <li>Selecionar o item <i>Accept License Agreement</i></li>
+                                <li>Clicar no link referente ao instalador de acordo com seu sistema operacional (<i>Linux, Solaris, MacOSx, Windows</i>)</li>
+                                <li>Aguardar o download do arquivo instalador</li>
+                                <li>Clicar no arquivo executável e seguir os passos propostos pelo instalador</li>
+                            </ol>
+                            <p>
+                                <input type="checkbox" id="check_instalacao_java">
+                                <label for="check_instalacao_java">Já conclui este passo</label>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="configuracao_java" class="collapsible-header"><i class="fa fa-arrow-right" aria-hidden="true"></i>Configurar Java JDK (Windows)</div>
+                        <div class="collapsible-body">
+                            <ol>
+                                <li>Vá até as Variáveis de Ambiente no Windows e:</li>
+                                <ol>
+                                    <li>Adicione a seguinte variável com o respectivo valor e clique em <i>OK</i></li>
+                                    <ol>
+                                        <li>Nome da variável: JAVA_HOME</li>
+                                        <li>Valor da variável: C:\Program Files\Java\jdk1.8.0_121</li>
+                                        <p><strong>Atenção: </strong>o Valor da variável é ilustrativo. O diretório correto deve ser o local onde está instalado o JDK, podendo haver diferenças na versão (números após o jdk1.8.0)</p>
+                                    </ol>
+                                </ol>
+                                <li>Selecione a variável <code>PATH</code> e clique em <i>Editar...</i></li>
+                                <li>Clique no botão <i>Novo</i> e adicione o seguinte valor de variável</li>
+                                <ol>
+                                    <li>%JAVA_HOME%\bin</li>
+                                    <p><strong>Atenção: </strong> se a variável PATH não existir, crie a variável com o mesmo valor de variável.</p>
+                                </ol>
+                                <li>Feche todas as telas clicando no botão <i>OK</i> e abra o Prompt de Comando. Se ele estiver aberto, feche-o e abra um novo</li>
+                                <li>Digite, no Prompt de Comando a  palavra <code>java</code> e pressione a tela ENTER</li>
+                                <li>Deve ser apresentado uma lista de opções (parâmetros) para o comando. A primeira linha possui o texto <i>“Uso: java [-options] class [args...]”</i></li>
+                            </ol>
+                            <p>
+                                <input type="checkbox" id="check_configuracao_java">
+                                <label for="check_configuracao_java">Já conclui este passo</label>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="ide" class="collapsible-header"><i class="fa fa-arrow-right" aria-hidden="true"></i>Instalar uma IDE de Desenvolvimento</div>
+                        <div class="collapsible-body">
+                            <p>Você pode usar a IDE de sua escolha para desenvolver os seus scripts de teste. Se você não está familiarizado com um IDE ou não sabe qual instalar eu recomendo o Eclipse IDE</p>
+                            <ol>
+                                <li>Acessar a página <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/neon3" target="_blank">http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/neon3</a></li>
+                                <li>No canto direito há uma sessão chamada <i>Download Links</i>. Clicar no link referente a seu sistema operacional</li>
+                                <li>Na tela de download, clicar no botão <i>Download</i></li>
+                                <li>Aguardar o download do arquivo</li>
+                                <li>Descompactar o arquivo .zip em uma pasta de sua escolha</li>
+                                <li>Navegar até a pasta onde você descompactou e execute o arquivo <i>Eclipse</i></li>
+                            </ol>
+                            <p>
+                                <input type="checkbox" id="check_ide">
+                                <label for="check_ide">Já conclui este passo</label>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="android_studio" class="collapsible-header"><i class="fa fa-arrow-right" aria-hidden="true"></i>Baixar Android Studio</div>
+                        <div class="collapsible-body">
+                            <ol>
+                                <li>Acessar o site <a href="https://developer.android.com/studio/index.html" target="_blank"></a>https://developer.android.com/studio/index.html</li>
+                                <li>Clicar no botão <i>Download Android Studio</i></li>
+                                <li>Aceitar os termos e condições marcando a opção <i>I have read and agree with the above terms and conditions</i></li>
+                                <li>Clicar no botão <i>Download Android Studio</i> abaixo dos termos e condições</li>
+                                <li>Aguardar o download do arquivo instalador</li>
+                                <li>Clicar no arquivo executável e seguir os passos propostos pelo instalador</li>
+                                <p>Você pode seguir o vídeo que da página que é exibida após o início do download para instalar o Android Studio.
+                                     Alternativamente você pode acessá-lo através deste link <a href="https://developer.android.com/studio/install.html" target="_blank">https://developer.android.com/studio/install.html</a></p>
+                            </ol>
+                            <p>
+                                <input type="checkbox" id="check_android_studio">
+                                <label for="check_android_studio">Já conclui este passo</label>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="atualizar_android_sdk" class="collapsible-header"><i class="fa fa-arrow-right" aria-hidden="true"></i>Atualizar o Android SDK</div>
+                        <div class="collapsible-body">
+                            <ol>
+                                <li>Abra o Android Studio</li>
+                                <li>Na tela inicial clique o item <i>Configure</i> e depois no item <i>SDK Manager</i></li>
+                                <li>Você precisa instalar e/ou atualizar os seguintes itens em cada aba</li>
+                                <ol>
+                                    <li>SDK Platform (aba)</li>
+                                    <ol>
+                                        <li>Android 6.0 (Marshmallow)</li>
+                                    </ol>
+                                    <li>SDK Tools (aba)</li>
+                                    <ol>
+                                        <li>Android SDK Build-Tools</li>
+                                        <li>Android Emulator 26.0.3</li>
+                                        <li>Android SDK Platform-Tools 25.0.6</li>
+                                        <li>Android SDK Tools 26.0.2</li>
+                                    </ol>
+                                    <li>Clique no botão <i>Apply</i> para atualizar o Android SDK</li>
+                                    <li>Ao término da atualização, feche o Android Studio</li>
+                                </ol>
+                                <p><strong>Observação: </strong>as versões listadas para a aba <i>SDK Tools</i> provavelmente devem estar desatualizadas.
+                                    Sempre utilize a versão que está sendo exibida para você</p>
+
+                            </ol>
+                            <p>
+                                <input type="checkbox" id="check_atualizar_android_sdk">
+                                <label for="check_atualizar_android_sdk">Já conclui este passo</label>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="configurar_android_sdk" class="collapsible-header"><i class="fa fa-arrow-right" aria-hidden="true"></i>Configurar o Android SDK</div>
+                        <div class="collapsible-body">
+                            <ol>
+                                <li>Abra o Android Studio</li>
+                                <li>Na tela inicial clique o item <i>Configure</i> e depois no item <i>SDK Manager</i></li>
+                                <li>Copie o caminho apresentado no campo <i>Android SDK Location</i></li>
+                                <li>Vá até as Variáveis de Ambiente no Windows e:</li>
+                                <ol>
+                                    <li>Adicione a seguinte variável com o respectivo valor e clique em <i>OK</i></li>
+                                    <ol>
+                                        <li>Nome da variável: <code>ANDROID_HOME</code></li>
+                                        <li>Valor da variável: Diretório presente no campo <i>Android SDK Location</i></li>
+                                    </ol>
+                                    <li>Selecione a variável <code>PATH</code> e clique em <i>Editar...</i></li>
+                                    <li>Clique no botão <i>Novo</i> e adicione o seguinte valor de variável</li>
+                                    <ol>
+                                        <li><code>o	%ANDROID_HOME%\tools</code></li>
+                                    </ol>
+                                    <li>Clique novamente no botão <i>Novo</i> e adicione o seguinte valor de variável</li>
+                                    <ol>
+                                        <li><code>%ANDROID_HOME%\tools\bin</code></li>
+                                    </ol>
+                                    <li>Clique novamente no botão <i>Novo</i> e adicione o seguinte valor de variável</li>
+                                    <ol>
+                                        <li><code>%ANDROID_HOME%\platform-tools</code></li>
+                                    </ol>
+                                    <li>Feche todas as telas clicando no botão <i>OK</i> e abra o Prompt de Comando. Se ele estiver aberto, feche-o e abra um novo</li>
+                                    <li>No Prompt de Comando digite <code>uiautomatorviewer</code> e pressione ENTER</li>
+                                    <li>Uma janela com o título <i>UI Automator Viewer</i> deve ser apresentada. Feche a janela</li>
+                                    <li>Ainda no Prompt de Comando digite <code>adb</code> e pressione ENTER</li>
+                                    <li>Deve ser apresentado uma lista de opções (parâmetros) para o comando. A primeira linha possui o texto <i>Android Debug Bridge version</i></li>
+                                </ol>
+                            </ol>
+                            <p>
+                                <input type="checkbox" id="check_configurar_android_sdk">
+                                <label for="check_configurar_android_sdk">Já conclui este passo</label>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="genymotion" class="collapsible-header"><i class="fa fa-arrow-right" aria-hidden="true"></i>Instalar Genymotion</div>
+                        <div class="collapsible-body">
+                            <ol>
+                                <li>Acesse a página <a href="https://www.genymotion.com/fun-zone/" target="_blank">https://www.genymotion.com/fun-zone/</a></li>
+                                <li>Clique no botão <i>Download Genymotion Personal Edition</i></li>
+                                <li>Se você não possui um conta é necessário criá-la, caso contrario efetue o login na página</li>
+                                <li>Clique no botão de Download que será apresentado após o login</li>
+                                <li>Aguardar o download do arquivo instalador</li>
+                                <li>Clicar no arquivo executável e seguir os passos propostos pelo instalador</li>
+                                <li>Abra o Genymotion</li>
+                                <li>Clique no item <i>Personal Use</i> na mensagem que será apresentada</li>
+                                <li>Aceite os termos de licença</li>
+                                <li>Clique no botão <i>Add</i>. Será necessário clicar no botão <i>Sign</i> in e efetuar o login com usuário senha cadastrados anteriormente</li>
+                                <li>Na combo <i>Android Version</i> selecione o item <i>6.0.0</i></li>
+                                <li>Na lista de dipositivos selecione o item <i>Google Nexus 5 – 6.0.0 – API 23 – 1080 x 192</i>0 e clique em <i>Next</i></li>
+                                <li>Clique em <i>Next</i> na tela de confirmação de criação da máquina virtual Android e aguarde o término</li>
+                                <li>Feche o Genymotion</li>
+                            </ol>
+                            <p>
+                                <input type="checkbox" id="check_genymotion">
+                                <label for="check_genymotion">Já conclui este passo</label>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="duvidas" class="collapsible-header"><i class="fa fa-question" aria-hidden="true"></i>Dúvidas?</div>
+                        <div class="collapsible-body">
+                            <p>Se você tiver qualquer dúvida envie um e-mail para mim com o assunto <i>Pre-Condições Appium</i><br>
+                                <img src="img/e-mail.png">
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://use.fontawesome.com/9cbaf33543.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-102560902-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+
+</html>
