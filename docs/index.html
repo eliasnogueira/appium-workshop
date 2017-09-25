@@ -206,6 +206,45 @@
                         </div>
                     </li>
                     <li>
+                        <div id="bibliotecas" class="collapsible-header"><i class="fa fa-arrow-right" aria-hidden="true"></i>Uso das bibliotecas</div>
+                        <div class="collapsible-body">
+                            <p>Eu recomendo fortemente utilizar uma das seguintes IDEs de desenvolvimento abaixo</p>
+                            <ol>
+                                <li><a target="_blank" href="https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygenr">Eclipse IDE for Java Developers</a></li>
+                                <li><a target="_blank" href="https://www.jetbrains.com/idea/"></a>Intellij IDEA</li>
+                                <li><a target="_blank" href="https://netbeans.org/features/index.html"></a>Netbeans IDE</li>
+                            </ol>
+                            <p>Na criaço do projeto, eu recomendo que você utilize o Maven como tipo de projeto. Além de outros coisas ele vai gerenciar as dependências (bibliotecas) necessárias para o projeto.</p>
+                            <p>Para isso você deve adicionar o as seguintes dependências (sempre verifique se a versão das bibliotecas estão atualizadas</p>
+                            <p>
+                                <code>
+                                    <dependency>
+                                        <groupId>io.appium</groupId>
+                                        <artifactId>java-client</artifactId>
+                                        <version>5.0.3</version>
+                                    </dependency>
+
+                                    <dependency>
+                                        <groupId>org.seleniumhq.selenium</groupId>
+                                        <artifactId>selenium-java</artifactId>
+                                        <version>3.5.2</version>
+                                    </dependency>
+                                    
+                                    <dependency>
+                                        <groupId>junit</groupId>
+                                        <artifactId>junit</artifactId>
+                                        <version>4.12</version>
+                                    </dependency>
+                                </code>
+                            </p>
+                            
+                            <p>
+                                <input type="checkbox" id="check_bibliotecas">
+                                <label for="check_bibliotecas">Já conclui este passo</label>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
                         <div id="duvidas" class="collapsible-header"><i class="fa fa-question" aria-hidden="true"></i>Dúvidas?</div>
                         <div class="collapsible-body">
                             <p>Se você tiver qualquer dúvida envie um e-mail para mim com o assunto <i>Pre-Condições Appium</i><br>
