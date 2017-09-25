@@ -36,3 +36,7 @@ $('#check_configurar_android_sdk').click(function () {
 $('#check_genymotion').click(function () {
     this.checked === true ? $('#genymotion').addClass(greenItem) : $('#genymotion').removeClass(greenItem);
 });
+
+$('#check_bibliotecas').click(function () {
+    this.checked === true ? $('#bibliotecas').addClass(greenItem) : $('#bibliotecas').removeClass(greenItem);
+});
