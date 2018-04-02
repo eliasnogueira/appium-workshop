@@ -40,3 +40,15 @@ $('#check_genymotion').click(function () {
 $('#check_bibliotecas').click(function () {
     this.checked === true ? $('#bibliotecas').addClass(greenItem) : $('#bibliotecas').removeClass(greenItem);
 });
+
+$('#check_instalar_nodejs').click(function () {
+    this.checked === true ? $('#instalar_nodejs').addClass(greenItem) : $('#instalar_nodejs').removeClass(greenItem);
+});
+
+$('#check_appium_nodejs').click(function () {
+    this.checked === true ? $('#instalar_appium_nodejs').addClass(greenItem) : $('#instalar_appium_nodejs').removeClass(greenItem);
+});
+
+$('#check_appium_desktop').click(function () {
+    this.checked === true ? $('#instalar_appium_desktop').addClass(greenItem) : $('#instalar_appium_desktop').removeClass(greenItem);
+});
