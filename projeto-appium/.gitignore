@@ -11,6 +11,8 @@ buildNumber.properties
 
 .idea
 
+*.iml
+
 # Compiled class file
 *.class
 
