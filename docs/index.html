@@ -76,7 +76,7 @@
                         <div class="collapsible-body">
                             <p>Você pode usar a IDE de sua escolha para desenvolver os seus scripts de teste. Se você não está familiarizado com um IDE ou não sabe qual instalar eu recomendo o Eclipse IDE</p>
                             <ol>
-                                <li>Acessar a página <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/neon3" target="_blank">http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/neon3</a></li>
+                                <li>Acessar a página <a href="http://www.eclipse.org/downloads/packages/release/photon/r/eclipse-ide-java-developers" target="_blank">http://www.eclipse.org/downloads/packages/release/photon/r/eclipse-ide-java-developers</a></li>
                                 <li>No canto direito há uma sessão chamada <i>Download Links</i>. Clicar no link referente a seu sistema operacional</li>
                                 <li>Na tela de download, clicar no botão <i>Download</i></li>
                                 <li>Aguardar o download do arquivo</li>
@@ -118,14 +118,15 @@
                                 <ol>
                                     <li>SDK Platform (aba)</li>
                                     <ol>
-                                        <li>Android 6.0 (Marshmallow)</li>
+                                        <li>Android 8.1 (Oreo)</li>
                                     </ol>
                                     <li>SDK Tools (aba)</li>
                                     <ol>
                                         <li>Android SDK Build-Tools</li>
-                                        <li>Android Emulator 26.0.3</li>
-                                        <li>Android SDK Platform-Tools 25.0.6</li>
-                                        <li>Android SDK Tools 26.0.2</li>
+                                        <li>Android Emulator 27.3.9 (ou superior)</li>
+                                        <li>Android SDK Platform-Tools 28.0.0 (ou superior)</li>
+                                        <li>Android SDK Tools 26.1.1 (ou superior)</li>
+                                        <li>Se existir, marque também o item <i>Intel x86 Emulator Accelerator (HAXM installer)</i></li>
                                     </ol>
                                     <li>Clique no botão <i>Apply</i> para atualizar o Android SDK</li>
                                     <li>Ao término da atualização, feche o Android Studio</li>
@@ -202,10 +203,15 @@
                                 <li>Abra o Prompt de Comando ou Terminal</li>
                                 <li>Digite os seguintes comandos e pressione <i>ENTER</i></li>
                                 <p><code>npm install -g appium</code></p>
-                                <li>Se algum problema ocorrer durante a instalação:</li>
+                                <li>Se algum problema ocorrer durante a instalação no <b>Windows</b>:</li>
                                 <ol>
-                                    <li>No Windows: abra o Prompt de Comando como Administrador</li>
-                                    <li>No Linux e Mac: adicione o comando <i>sudo</i></li>
+                                    <li>Abra o PowerShell e execute os comandos abaixo, um de cada vez:</li>
+                                    <ol>
+                                       <li>`Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force`</li>
+                                       <li>`npm install -g npm-windows-upgrade`</li>
+                                       <li>`npm-windows-upgrade`</li>
+                                       <li>`npm install -g appium`</li>
+                                    </ol>
                                 </ol>
                             </ol>
                             <p>
